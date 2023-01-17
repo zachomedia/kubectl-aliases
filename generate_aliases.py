@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Copyright 2017 Google Inc.
@@ -57,6 +57,23 @@ def main():
         ('sec', 'secret', ['g', 'd', 'rm'], None),
         ('no', 'nodes', ['g', 'd'], ['sys']),
         ('ns', 'namespaces', ['g', 'd', 'rm'], ['sys']),
+        ('pvc', 'persistentvolumeclaims', ['g', 'd', 'rm'], None),
+        ('pv', 'persistentvolume', ['g', 'd', 'rm'], ['sys']),
+        ('np', 'networkpolicies', ['g', 'd', 'rm'], None),
+        ('vs', 'virtualservices', ['g', 'd', 'rm'], None),
+        ('gw', 'gateways', ['g', 'd', 'rm'], None),
+        ('ap', 'authorizationpolicies', ['g', 'd', 'rm'], None),
+        ('pa', 'peerauthentications', ['g', 'd', 'rm'], None),
+        ('rq', 'resourcequotas', ['g', 'd', 'rm'], None),
+        ('lr', 'limitranges', ['g', 'd', 'rm'], None),
+        ('es', 'elasticsearches', ['g', 'd', 'rm'], None),
+        ('kb', 'kibanas', ['g', 'd', 'rm'], None),
+        ('vwc', 'validatingwebhookconfigurations', ['g', 'd', 'rm'], ['sys']),
+        ('mwc', 'mutatingwebhookconfigurations', ['g', 'd', 'rm'], ['sys']),
+        ('crt', 'certificates', ['g', 'd', 'rm'], None),
+        ('ic', 'ingressclasses', ['g', 'd', 'rm'], ['sys']),
+        ('sc', 'storageclasses', ['g', 'd', 'rm'], ['sys']),
+        ('ds', 'daemonsets', ['g', 'd', 'rm'], ['sys']),
         ]
     res_types = [r[0] for r in res]
 
