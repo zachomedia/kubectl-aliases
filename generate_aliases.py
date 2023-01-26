@@ -71,9 +71,12 @@ def main():
         ('vwc', 'validatingwebhookconfigurations', ['g', 'd', 'rm'], ['sys']),
         ('mwc', 'mutatingwebhookconfigurations', ['g', 'd', 'rm'], ['sys']),
         ('crt', 'certificates', ['g', 'd', 'rm'], None),
+        ('crq', 'certificaterequests', ['g', 'd', 'rm'], None),
+        ('or', 'orders', ['g', 'd', 'rm'], None),
+        ('ch', 'challenges', ['g', 'd', 'rm'], None),
         ('ic', 'ingressclasses', ['g', 'd', 'rm'], ['sys']),
         ('sc', 'storageclasses', ['g', 'd', 'rm'], ['sys']),
-        ('ds', 'daemonsets', ['g', 'd', 'rm'], ['sys']),
+        ('ds', 'daemonsets', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 
