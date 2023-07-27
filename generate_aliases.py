@@ -64,6 +64,8 @@ def main():
         ('gw', 'gateways', ['g', 'd', 'rm'], None),
         ('ap', 'authorizationpolicies', ['g', 'd', 'rm'], None),
         ('pa', 'peerauthentications', ['g', 'd', 'rm'], None),
+        ('dr', 'destinationrules', ['g', 'd', 'rm'], None),
+        ('se', 'serviceentries', ['g', 'd', 'rm'], None),
         ('rq', 'resourcequotas', ['g', 'd', 'rm'], None),
         ('lr', 'limitranges', ['g', 'd', 'rm'], None),
         ('es', 'elasticsearches', ['g', 'd', 'rm'], None),
@@ -77,6 +79,7 @@ def main():
         ('ic', 'ingressclasses', ['g', 'd', 'rm'], ['sys']),
         ('sc', 'storageclasses', ['g', 'd', 'rm'], ['sys']),
         ('ds', 'daemonsets', ['g', 'd', 'rm'], None),
+        ('sa', 'serviceaccounts', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 
